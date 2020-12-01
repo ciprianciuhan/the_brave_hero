@@ -5,12 +5,23 @@ import java.util.Random;
 public class Hero extends Character {
 	
 	public void forta_dragonului() {
+		
+		//dubleaza puterea eroului
+		System.out.println("Eroul a activat Forta Dragonului!");
+		
 		set_putere(get_putere()*2);
+		
 	}
 	
-	public static void scutul_fermecat() {
+	public int scutul_fermecat(int damage) {
 		
-		//injumatateste damage-ul pe care il primeste, o sa ma mai gandesc aici
+		//injumatateste damage-ul pe care il primeste eroul
+		
+		System.out.println("Eroul a activat Scutul Fermecat!");
+		
+		damage /= 2;
+		
+		return damage;
 		
 	}
 	
